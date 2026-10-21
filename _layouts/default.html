@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About me</a>
+        <a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} aria-current="page"{% endif %}>Research</a>
+        <a href="{{ '/outputs/' | relative_url }}"{% if page.url == '/outputs/' %} aria-current="page"{% endif %}>Research Outputs</a>
+        {% if site.show_services %}<a href="{{ '/work-with-me/' | relative_url }}"{% if page.url == '/work-with-me/' %} aria-current="page"{% endif %}>Work with me</a>{% endif %}
+        <a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">{{ site.name }}</p>
+        <p>{{ site.role }}</p>
+      </div>
+      <div class="footer-item">
+        {% include icon.html name="pin" %}
+        <p>{{ site.organisation }}</p>
+      </div>
+      <div class="footer-item">
+        {% include icon.html name="mail" %}
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <ul class="footer-links" aria-label="Profiles">
+        {% if site.orcid != "" %}<li><a href="{{ site.orcid }}">ORCID</a></li>{% endif %}
+        {% if site.google_scholar != "" %}<li><a href="{{ site.google_scholar }}">Google Scholar</a></li>{% endif %}
+        {% if site.linkedin != "" %}<li><a href="{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
+        {% if site.github != "" %}<li><a href="{{ site.github }}">GitHub</a></li>{% endif %}
+      </ul>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.author }}</p>
+      <p>Last updated {{ site.time | date: "%-d %B %Y" }}</p>
+    </div>
+  </footer>
+</body>
+</html>
