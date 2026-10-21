@@ -1,0 +1,61 @@
+# ===============================================================
+# SITE SETTINGS: the facts shown on every page.
+# To change something: edit the text inside the quotes, then commit.
+# Keep the quotes, and keep the two spaces at the start of indented lines.
+# ===============================================================
+
+name: "Dr Benjamin Atta Owusu"
+initials: "BAO"                  # shown in place of a photo until you add one
+role: "Postdoctoral Research Fellow"
+organisation: "Exeter Collaboration for Academic Primary Care (APEx), University of Exeter"
+email: "benteeta@gmail.com"
+
+# How your name appears in author lists. It is shown in bold, and
+# papers whose author list starts with it count as first-author papers.
+name_in_papers: "Owusu BA"
+
+# Photo and CV: upload the file into the "assets" folder, then type its
+# path here, e.g. "/assets/photo.jpg". Leave "" until you have one.
+photo: ""
+cv_pdf: ""
+
+# Profile links: paste the full address, or leave "" to hide the link.
+orcid: ""
+google_scholar: "https://scholar.google.com/citations?user=aXG8-AwAAAAJ&hl=en"
+linkedin: "https://www.linkedin.com/in/benjamin-atta-owusu-a0a76039/?isSelfProfile=true"
+github: "https://github.com/benteeta"
+
+# Funding cards in the "Track record" section of the home page.
+highlights:
+  - number: "£55,000"
+    label: "EPSRC LEAP fellowship"
+    detail: "Lead applicant, 2024"
+  - number: "£14,000"
+    label: "HDR UK South West seedcorn"
+    detail: "Co-applicant, 2025"
+
+# Enquiry form on the Contact page. Leave "" and the form opens the
+# visitor's email app. Paste your Formspree code here later, e.g. "xyzabcd1".
+form_id: ""
+
+# true shows the "Work with me" page in the menu; false hides it.
+show_services: false
+
+
+# ===============================================================
+# TECHNICAL SETTINGS: no need to change anything below this line.
+# ===============================================================
+
+title: "Benjamin Atta Owusu"
+description: "Health data scientist and epidemiologist, University of Exeter"
+author: "Benjamin Atta Owusu"
+url: "https://benjaminattaowusu.com"
+baseurl: ""
+lang: "en_GB"
+permalink: pretty
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
