@@ -120,39 +120,3 @@ layout: default
   </div>
 </section>
 
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Track record</h2>
-      <a class="more" href="{{ '/research/#funding' | relative_url }}">Funding {% include icon.html name="arrow" %}</a>
-    </div>
-    <div class="grid grid-4">
-      <div class="card stat">
-        <span class="card-icon">{% include icon.html name="book" %}</span>
-        <div>
-          <p class="stat-number">{{ n_published }}</p>
-          <p class="stat-label">Published papers</p>
-          <p class="stat-detail">Journal and conference papers</p>
-        </div>
-      </div>
-      <div class="card stat">
-        <span class="card-icon">{% include icon.html name="pen" %}</span>
-        <div>
-          <p class="stat-number">{{ n_first }}</p>
-          <p class="stat-label">First-author papers</p>
-          <p class="stat-detail">As lead author</p>
-        </div>
-      </div>
-      {% for item in site.highlights %}
-      <div class="card stat">
-        <span class="card-icon">{% include icon.html name="award" %}</span>
-        <div>
-          <p class="stat-number">{{ item.number }}</p>
-          <p class="stat-label">{{ item.label }}</p>
-          <p class="stat-detail">{{ item.detail }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
