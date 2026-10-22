@@ -16,7 +16,7 @@ name_in_papers: "Owusu BA"
 
 # Photo and CV: upload the file into the "assets" folder, then type its
 # path here, e.g. "/assets/photo.jpg". Leave "" until you have one.
-photo: ""
+photo: "/assets/photo.jpg"
 cv_pdf: ""
 
 # Profile links: paste the full address, or leave "" to hide the link.
