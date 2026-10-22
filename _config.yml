@@ -20,9 +20,9 @@ photo: "/assets/photo.jpg"
 cv_pdf: ""
 
 # Profile links: paste the full address, or leave "" to hide the link.
-orcid: ""
+orcid: "https://orcid.org/0000-0002-1573-4563"
 google_scholar: "https://scholar.google.com/citations?user=aXG8-AwAAAAJ&hl=en"
-linkedin: "https://www.linkedin.com/in/benjamin-atta-owusu-a0a76039/?isSelfProfile=true"
+linkedin: "https://www.linkedin.com/in/benjamin-atta-owusu-a0a76039/"
 github: "https://github.com/benteeta"
 
 # Funding cards in the "Track record" section of the home page.
