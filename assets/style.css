@@ -559,3 +559,123 @@ img { max-width: 100%; height: auto; }
 .form-status { margin: 0; font-size: 0.95rem; }
 .form-status.is-ok { color: var(--accent); font-weight: 600; }
 .form-status.is-error { color: var(--warm); font-weight: 600; }
+
+
+/* ---------- About me page (profile layout) ---------- */
+
+.profile-grid { display: grid; gap: 32px; padding-top: 36px; padding-bottom: 64px; }
+@media (min-width: 900px) {
+  .profile-grid { grid-template-columns: 280px minmax(0, 1fr); gap: 56px; align-items: start; }
+  .profile-card { position: sticky; top: 24px; }
+}
+
+/* The navy card on the left */
+.profile-card {
+  background: var(--navy);
+  color: var(--on-navy);
+  border-radius: var(--radius);
+  padding: 28px 24px 24px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.profile-photo {
+  width: 132px; height: 132px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.85);
+  background: var(--accent-soft);
+}
+.profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }
+.profile-photo .monogram { font-size: 2.4rem; }
+.profile-name { margin: 0; font-size: 1.3rem; font-weight: 700; line-height: 1.25; }
+.profile-role { margin: 6px 0 20px; color: var(--on-navy-muted); font-size: 0.98rem; }
+
+.profile-facts {
+  list-style: none; margin: 0; padding: 18px 0 0;
+  border-top: 1px solid var(--navy-line);
+  text-align: left;
+  font-family: var(--sans); font-size: 0.88rem; line-height: 1.45;
+}
+.profile-facts li { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; overflow-wrap: anywhere; }
+.profile-facts .icon { margin-top: 2px; color: var(--on-navy-muted); }
+.profile-facts a { color: var(--on-navy); }
+.orcid-badge {
+  flex: none;
+  display: inline-grid; place-items: center;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: #a6ce39; color: #ffffff;
+  font-size: 0.62rem; font-weight: 700; letter-spacing: -0.02em;
+}
+
+.profile-links {
+  list-style: none; margin: 6px 0 0; padding: 16px 0 0;
+  border-top: 1px solid var(--navy-line);
+  display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+}
+.profile-links a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  color: var(--on-navy);
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 600;
+  text-decoration: none;
+}
+.profile-links a:hover { background: rgba(255, 255, 255, 0.12); color: var(--on-navy); border-color: var(--on-navy); }
+
+/* The text on the right */
+.profile-body { padding: 0; }
+.profile-body > * { max-width: 760px; }
+.profile-body h2 {
+  display: flex; align-items: center; gap: 12px;
+  margin: 40px 0 16px; padding-top: 0; border-top: 0;
+  font-size: 1.45rem;
+}
+.profile-body h2::before {
+  content: ""; flex: none;
+  width: 6px; height: 1.1em; border-radius: 3px;
+  background: var(--accent);
+}
+.profile-body > h2:first-child { margin-top: 0; }
+.profile-body h3 {
+  margin: 22px 0 10px;
+  font-family: var(--sans); font-size: 0.82rem; font-weight: 700;
+  color: var(--muted); letter-spacing: 0.02em;
+}
+
+/* First biography paragraph reads as an introduction */
+.profile-body > h2:first-child + p { font-size: 1.15rem; line-height: 1.65; color: var(--ink); }
+
+/* Research expertise as tags: add {: .chips} under the list in about.md */
+.profile-body ul.chips { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.profile-body ul.chips li {
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 600;
+}
+
+/* Appointments, degrees and other dated entries: add {: .timeline} under the list */
+.profile-body ul.timeline {
+  list-style: none;
+  margin-left: 6px; padding-left: 0;
+  border-left: 2px solid var(--line);
+}
+.profile-body ul.timeline li {
+  position: relative;
+  margin: 0; padding: 0 0 20px 24px;
+  color: var(--muted); font-size: 0.98rem; line-height: 1.5;
+}
+.profile-body ul.timeline li:last-child { padding-bottom: 4px; }
+.profile-body ul.timeline li::before {
+  content: "";
+  position: absolute; left: -8px; top: 0.35em;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--bg); border: 3px solid var(--accent);
+}
+.profile-body ul.timeline li:first-child::before { background: var(--accent); }
+.profile-body ul.timeline strong { display: block; color: var(--ink); font-size: 1.05rem; }
+.profile-body ul.timeline br { display: none; }
