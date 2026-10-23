@@ -56,15 +56,15 @@ He is committed to building research capacity. He supervises MSc and PhD student
 
 ### PhD
 
-- **2025 to 2028**<br>Continuity of care prediction models for multimorbid patients with a focus on heart failure and chronic obstructive pulmonary disease.
+- **2025 to 2028**<br>Continuity of care prediction models for multimorbid patients with a focus on heart failure and chronic obstructive pulmonary disease [Postgraduate Research].
 {: .timeline}
 
 ### MSc
 
-- **2026**<br>Machine learning visualisation of patterns of health conditions and healthcare contacts: a study of multiple long-term condition burden, outpatient engagement, and emergency attendance in heart failure.
-- **2026**<br>Developing predictive models for hospital admissions at seasonal holidays.
-- **2025**<br>Machine learning visualisation of multiple long-term conditions in patients with heart failure.
-- **2025**<br>Exploring the relationship between furosemide dose and hospital admissions in patients with heart failure: evaluating statistical and machine learning approaches.
+- **2026**<br>Machine learning visualisation of patterns of health conditions and healthcare contacts: a study of multiple long-term condition burden, outpatient engagement, and emergency attendance in heart failure [Student Project].
+- **2026**<br>Developing predictive models for hospital admissions at seasonal holidays [Student Project].
+- **2025**<br>Machine learning visualisation of multiple long-term conditions in patients with heart failure [Student Project].
+- **2025**<br>Exploring the relationship between furosemide dose and hospital admissions in patients with heart failure: evaluating statistical and machine learning approaches [Student Project].
 {: .timeline}
 
 ## Teaching
