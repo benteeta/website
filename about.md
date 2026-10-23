@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: profile
 title: About me
 description: "Biography, research expertise, appointments, degrees, supervision and memberships."
 ---
@@ -30,51 +30,45 @@ He is committed to building research capacity. He supervises MSc and PhD student
 - Digital twins in healthcare
 - Health inequalities
 - Environmental and occupational epidemiology
+{: .chips}
 
 ## Appointments
 
-**Postdoctoral Research Fellow**<br>
-Exeter Collaboration for Academic Primary Care, University of Exeter Medical School, United Kingdom. December 2023 to present
-
-**Postdoctoral Research Fellow**<br>
-Faculty of Medicine, Prince of Songkla University, Thailand. January 2023 to December 2023
-
-**Research Assistant**<br>
-Division of Digital Innovation and Data Analytics, Faculty of Medicine, Prince of Songkla University, Thailand. 2021 to 2022
+- **Postdoctoral Research Fellow**<br>Exeter Collaboration for Academic Primary Care, University of Exeter Medical School, United Kingdom. December 2023 to present
+- **Postdoctoral Research Fellow**<br>Faculty of Medicine, Prince of Songkla University, Thailand. January 2023 to December 2023
+- **Research Assistant**<br>Division of Digital Innovation and Data Analytics, Faculty of Medicine, Prince of Songkla University, Thailand. 2021 to 2022
+{: .timeline}
 
 ## Memberships
 
-**Graduate Statistician (GradStat)**<br>
-Royal Statistical Society, United Kingdom. 2026 to present
-
-**Member**<br>
-Society for Academic Primary Care, United Kingdom. 2025 to present
+- **Graduate Statistician (GradStat)**<br>Royal Statistical Society, United Kingdom. 2026 to present
+- **Member**<br>Society for Academic Primary Care, United Kingdom. 2025 to present
+{: .timeline}
 
 ## Degrees
 
-**PhD, Research Methodology**<br>
-Prince of Songkla University, Thailand. 2023
-
-**MSc, Applied Mathematics**<br>
-Prince of Songkla University, Thailand. 2018
-
-**BSc (Hons), Mathematics**<br>
-Kwame Nkrumah University of Science and Technology, Ghana. 2013
+- **PhD, Research Methodology**<br>Prince of Songkla University, Thailand. 2023
+- **MSc, Applied Mathematics**<br>Prince of Songkla University, Thailand. 2018
+- **BSc (Hons), Mathematics**<br>Kwame Nkrumah University of Science and Technology, Ghana. 2013
+{: .timeline}
 
 ## Supervision
 
 ### PhD
 
-- 2025 to 2028: Continuity of care prediction models for multimorbid patients with a focus on heart failure and chronic obstructive pulmonary disease.
+- **2025 to 2028**<br>Continuity of care prediction models for multimorbid patients with a focus on heart failure and chronic obstructive pulmonary disease.
+{: .timeline}
 
 ### MSc
 
-- 2026: Machine learning visualisation of patterns of health conditions and healthcare contacts: a study of multiple long-term condition burden, outpatient engagement, and emergency attendance in heart failure.
-- 2026: Developing predictive models for hospital admissions at seasonal holidays.
-- 2025: Machine learning visualisation of multiple long-term conditions in patients with heart failure.
-- 2025: Exploring the relationship between furosemide dose and hospital admissions in patients with heart failure: evaluating statistical and machine learning approaches.
+- **2026**<br>Machine learning visualisation of patterns of health conditions and healthcare contacts: a study of multiple long-term condition burden, outpatient engagement, and emergency attendance in heart failure.
+- **2026**<br>Developing predictive models for hospital admissions at seasonal holidays.
+- **2025**<br>Machine learning visualisation of multiple long-term conditions in patients with heart failure.
+- **2025**<br>Exploring the relationship between furosemide dose and hospital admissions in patients with heart failure: evaluating statistical and machine learning approaches.
+{: .timeline}
 
 ## Teaching
 
-- Tutor, University of Exeter Medical School: the patient experience of multimorbidity (2025 and 2026).
-- Instructor, NIH-supported workshop on data science and machine learning for TB research in Southeast Asia (2021).
+- **Tutor**<br>University of Exeter Medical School: the patient experience of multimorbidity. 2025 and 2026
+- **Instructor**<br>NIH-supported workshop on data science and machine learning for TB research in Southeast Asia. 2021
+{: .timeline}
