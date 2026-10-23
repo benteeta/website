@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{% comment %}
+  The About me page: a profile card on the left, your text on the right.
+  The card takes everything from _config.yml (photo, role, email, links).
+  The text comes from about.md. You do not need to edit this file.
+{% endcomment %}
+<header class="page-head">
+  <div class="wrap">
+    <span class="accent-bar" aria-hidden="true"></span>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  </div>
+</header>
+
+<div class="wrap profile-grid">
+  <aside class="profile-card" aria-label="Profile">
+    <div class="profile-photo">
+      {% if site.photo and site.photo != "" %}
+        <img src="{{ site.photo | relative_url }}" alt="Photo of {{ site.name }}" width="132" height="132">
+      {% else %}
+        <span class="monogram" aria-hidden="true">{{ site.initials }}</span>
+      {% endif %}
+    </div>
+    <p class="profile-name">{{ site.name }}</p>
+    <p class="profile-role">{{ site.role }}</p>
+
+    <ul class="profile-facts">
+      {% if site.orcid != "" %}
+      <li>
+        <span class="orcid-badge" aria-hidden="true">iD</span>
+        <a href="{{ site.orcid }}">{{ site.orcid | split: "/" | last }}</a>
+      </li>
+      {% endif %}
+      <li>{% include icon.html name="pin" %}<span>{{ site.organisation }}</span></li>
+      <li>{% include icon.html name="mail" %}<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    </ul>
+
+    <ul class="profile-links">
+      {% if site.google_scholar != "" %}<li><a href="{{ site.google_scholar }}">Google Scholar</a></li>{% endif %}
+      {% if site.linkedin != "" %}<li><a href="{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
+      {% if site.github != "" %}<li><a href="{{ site.github }}">GitHub</a></li>{% endif %}
+      {% if site.cv_pdf and site.cv_pdf != "" %}<li><a href="{{ site.cv_pdf | relative_url }}">Download CV</a></li>{% endif %}
+      <li><a href="{{ '/contact/' | relative_url }}">Get in touch</a></li>
+    </ul>
+  </aside>
+
+  <div class="prose profile-body">
+    {{ content }}
+  </div>
+</div>
