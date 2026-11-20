@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% comment %}
+  Plain text pages (for example Contact): the profile card on the left,
+  the page's text on the right. You do not need to edit this file.
+{% endcomment %}
 <header class="page-head">
   <div class="wrap">
     <span class="accent-bar" aria-hidden="true"></span>
@@ -9,6 +13,9 @@ layout: default
   </div>
 </header>
 
-<div class="wrap prose">
-  {{ content }}
+<div class="wrap profile-grid card-after-on-phones">
+  {% include profile-card.html %}
+  <div class="prose profile-body">
+    {{ content }}
+  </div>
 </div>
