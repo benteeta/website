@@ -14,7 +14,7 @@
   featured: true
   picture: interval
   summary: "How often COPD is recorded before heart failure, how long the gap is between the two diagnoses, and which factors are associated with a longer interval."
-  tags: ["Multimorbidity", "CPRD"]
+   tags: ["Multimorbidity", "Linked data"]
 
 - title: "Falls in heart failure"
   featured: true
