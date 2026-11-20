@@ -679,3 +679,22 @@ img { max-width: 100%; height: auto; }
 .profile-body ul.timeline li:first-child::before { background: var(--accent); }
 .profile-body ul.timeline strong { display: block; color: var(--ink); font-size: 1.05rem; }
 .profile-body ul.timeline br { display: none; }
+
+
+/* ---------- Profile card on every page except Home ---------- */
+
+/* The right-hand column on Research and Outputs */
+.page-main { min-width: 0; }
+.page-main > .profile-body { padding-bottom: 0; }
+.page-main > .profile-body + .page-section,
+.page-main > .page-section + .profile-body { margin-top: 36px; }
+.page-section .section-head { margin-bottom: 18px; }
+.profile-body.intro p { font-size: 1.12rem; line-height: 1.7; }
+.page-main .pub-list { max-width: none; }
+
+/* On phones, show the card after the page's own content
+   (the About page keeps it at the top) */
+@media (max-width: 899px) {
+  .card-after-on-phones .profile-card { order: 2; }
+}
+
