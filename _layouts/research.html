@@ -5,6 +5,7 @@ layout: default
   research.md is split at the line <!-- PROJECTS -->.
   Text above that line opens the page. The project cards
   (from _data/projects.yml) come next, then the text below the line.
+  The profile card sits on the left. You do not need to edit this file.
 {% endcomment %}
 {% assign parts = content | split: "<!-- PROJECTS -->" %}
 <header class="page-head">
@@ -14,21 +15,24 @@ layout: default
   </div>
 </header>
 
-{% if parts.size > 1 %}
-<div class="wrap prose intro">
-  {{ parts[0] }}
-</div>
-{% endif %}
+<div class="wrap profile-grid card-after-on-phones">
+  {% include profile-card.html %}
+  <div class="page-main">
+    {% if parts.size > 1 %}
+    <div class="prose profile-body intro">
+      {{ parts[0] }}
+    </div>
+    {% endif %}
 
-<section class="section section-tight">
-  <div class="wrap">
-    <div class="section-head"><h2>Current projects</h2></div>
-    <div class="grid grid-2">
-      {% for project in site.data.projects %}{% include project-card.html project=project %}{% endfor %}
+    <section class="page-section">
+      <div class="section-head"><h2>Current projects</h2></div>
+      <div class="grid grid-2">
+        {% for project in site.data.projects %}{% include project-card.html project=project %}{% endfor %}
+      </div>
+    </section>
+
+    <div class="prose profile-body">
+      {% if parts.size > 1 %}{{ parts[1] }}{% else %}{{ content }}{% endif %}
     </div>
   </div>
-</section>
-
-<div class="wrap prose">
-  {% if parts.size > 1 %}{{ parts[1] }}{% else %}{{ content }}{% endif %}
 </div>
